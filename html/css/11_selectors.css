@@ -28,15 +28,34 @@ Universal Selector: *
   color: cadetblue;
 }
 
-/*클래스가 italic인 태그
-  폰트에 기울기 주기*/
-.italic {
-  font-style: italic;
-}
-
 /*클래스가 big-font-size인 태그
   폰트 크기를 2rem=>32px
   */
 .big-font-size {
   font-size: 2rem;
+}
+
+/*클래스가 italic인 태그
+  폰트에 기울기 주기*/
+.italic {
+  font-style: italic;
+  font-size: 4rem;
+}
+
+/* body 스타일: 배경색 ff0 */
+body {
+  background-color: #ff0;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+
+/* div 스타일: 배경색 ccc, border-radius: 1rem */
+div {
+  background-color: #ff0;
+  border-radius: 1rem;
+}
+
+/*Universal Style: 글자 색상 333 */
+* {
+  color: #333;
 }
