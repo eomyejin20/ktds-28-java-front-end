@@ -1,0 +1,151 @@
+/** @format */
+:root {
+  --header-background-color: #fed50a;
+  --header-border-color: #e3a20e;
+}
+
+.header {
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+img {
+  vertical-align: middle;
+  width: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 380px;
+}
+
+.top-box {
+  padding: 0;
+}
+
+.menu-bar {
+  display: inline-block;
+
+  background-color: #fed50a;
+
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.align-left {
+  margin-left: 5px;
+  margin-right: 60%;
+  width: 40px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.category {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.category-name1 {
+  display: inline-block;
+
+  width: 45%;
+  border-bottom: 1px solid #f00;
+  text-align: center;
+  padding: 5px;
+  margin: 0 2%;
+}
+
+.category-name2 {
+  display: inline-block;
+
+  width: 45%;
+  text-align: center;
+  margin: 0 2%;
+}
+
+.post {
+  border: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.notice {
+  display: inline-block;
+
+  color: white;
+  background-color: #f00;
+  font-size: 0.6rem;
+  width: 25px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.notice-title {
+  display: inline-block;
+
+  color: #f00;
+  font-weight: 2rem;
+  padding: 5px;
+}
+
+.comment_cnt {
+  display: inline-block;
+
+  font-size: 0.7rem;
+  color: orange;
+}
+
+.notice-sub {
+  display: inline-block;
+
+  font-size: 0.625rem;
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.post-title {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.writer {
+  display: inline-block;
+  font-size: 0.6rem;
+  color: orange;
+  margin: 0 5px;
+}
+
+.date {
+  display: inline-block;
+  font-size: 0.6rem;
+  color: #222;
+}
+
+.bottom-box {
+  background-color: #000;
+  text-align: center;
+  padding: 2px;
+  font-size: 1rem;
+}
+
+.login-btn {
+  color: #aaa;
+  font-size: 0.9rem;
+  width: 50px;
+  background-color: #222;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin: auto;
+}
+
+.text-sample {
+  color: #aaa;
+  padding: 20px 0;
+}
