@@ -1,0 +1,125 @@
+/* @format */
+
+:root {
+  --color-border: rgb(244, 236, 236);
+  --color-text: #222;
+  --color-text-gray: #888;
+  --color-text-green: rgb(26, 206, 26);
+  --color-gray-background: rgb(162, 161, 161);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 800px;
+  max-width: 1000px;
+  border-top: 6px solid var(--color-border-top);
+  padding: 10px 30px;
+  margin: 0 auto;
+}
+
+.login-box {
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.menu {
+  display: inline-block;
+
+  width: 12%;
+  color: var(--color-text-gray);
+  padding-bottom: 14px;
+}
+
+.total {
+  color: var(--color-text-green);
+  font-weight: 700;
+  width: 5%;
+  border-bottom: 2px solid var(--color-text-green);
+  margin-bottom: -15px;
+}
+
+.post {
+  padding: 30px 30px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.user-box {
+  margin-bottom: 12px;
+}
+
+.profile {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-gray-background);
+}
+
+.name {
+  display: inline-block;
+  width: 12%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  vertical-align: middle;
+}
+
+.date {
+  display: inline-block;
+  width: 20;
+  font-size: 0.8rem;
+  color: var(--color-text-gray);
+}
+
+.title {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.content {
+  display: inline-block;
+  width: 80%;
+  font-size: 0.9rem;
+  color: var(--color-text-gray);
+}
+
+.main-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  background-color: var(--color-gray-background);
+}
+
+.bottom-box {
+  margin: 10px 0;
+}
+
+.like,
+.comment {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--color-text-gray);
+}
+
+.like-count,
+.comment-count {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--color-text-gray);
+  margin-left: 3px;
+  margin-right: 12px;
+}
