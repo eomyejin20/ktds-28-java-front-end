@@ -18,10 +18,9 @@ body {
 
 .wrapper {
   width: 100%;
-  min-width: 800px;
+  min-width: 880px;
   max-width: 1000px;
   border-top: 6px solid var(--color-border-top);
-  padding: 10px 30px;
   margin: 0 auto;
 }
 
@@ -32,20 +31,22 @@ body {
   color: var(--color-text);
 }
 
+.menu-bar {
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  margin: 0 30px;
+}
+
 .menu {
   display: inline-block;
-
   width: 12%;
-  color: var(--color-text-gray);
-  padding-bottom: 14px;
+  color: var(--color-text);
 }
 
 .total {
   color: var(--color-text-green);
   font-weight: 700;
   width: 5%;
-  border-bottom: 2px solid var(--color-text-green);
-  margin-bottom: -15px;
 }
 
 .post {
@@ -54,11 +55,14 @@ body {
 }
 
 .user-box {
+  display: inline-block;
+  width: 70%;
   margin-bottom: 12px;
 }
 
 .profile {
   display: inline-block;
+  vertical-align: middle;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -67,7 +71,7 @@ body {
 
 .name {
   display: inline-block;
-  width: 12%;
+  width: 20%;
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-text);
@@ -76,14 +80,18 @@ body {
 
 .date {
   display: inline-block;
+  vertical-align: middle;
   width: 20;
   font-size: 0.8rem;
   color: var(--color-text-gray);
+  margin-right: 50%;
+}
+
+.text-box {
+  margin-top: 10px;
 }
 
 .title {
-  display: inline-block;
-  width: 80%;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-text);
@@ -91,16 +99,15 @@ body {
 }
 
 .content {
-  display: inline-block;
-  width: 80%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--color-text-gray);
 }
 
 .main-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 6px;
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  height: 150px;
   background-color: var(--color-gray-background);
 }
 
