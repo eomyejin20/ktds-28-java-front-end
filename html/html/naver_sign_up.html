@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Naver</title>
+    <link type="text/css" rel="stylesheet" href="../css/naver_sign_up.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="text" placeholder="아이디" id="id" />
+      <input type="password" placeholder="Password" />
+      <input
+        type="email"
+        placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)"
+      />
+      <input type="text" placeholder="이름" id="name" />
+      <input type="text" placeholder="생년월일 8자리" maxlength="8" />
+      <select>
+        <option>통신사 선택</option>
+        <option>kt</option>
+        <option>skt</option>
+        <option>u+</option>
+        <option>기타</option>
+      </select>
+      <div class="input-area">
+        <div class="input-field">
+          <label for="male">남자</label>
+          <input type="radio" name="gender" id="male" checked />
+        </div>
+        <div class="input-field">
+          <label for="female">여자</label>
+          <input type="radio" name="gender" id="female" />
+        </div>
+        <div class="input-field">
+          <label for="local">내국인</label>
+          <input type="radio" name="national" id="local" checked />
+        </div>
+        <div class="input-field">
+          <label for="foriegner">외국인</label>
+          <input type="radio" name="national" id="foriegner" />
+        </div>
+      </div>
+      <input type="tel" placeholder="휴대전화번호" />
+      <div class="check">
+        <label for="agree"></label>
+        <input type="checkbox" name="agree-terms" id="agree" />
+        <p class="p1">[필수]</p>
+        <p class="p2">인증약관 전체동의</p>
+      </div>
+    </div>
+  </body>
+</html>
