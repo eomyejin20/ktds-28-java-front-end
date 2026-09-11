@@ -10,13 +10,73 @@ body {
   margin: 0 auto;
 }
 
-.flex-column {
+.wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #333;
+  opacity: 0.8;
+  background-size: cover;
+}
+
+.main-poster {
+  width: 1100px;
+  height: 600px;
+  margin: 2rem;
+  border-radius: 30px;
+  /* background-image: url("https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20260615/0950/P001788275.jpg/dims/resize/F_webp,400"); */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwFlDkPfsEMT7QAAT_5f-vysR0OjeLpkK-1u0YcYAMK6c0fxG-0Gjg92s&s=10");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.flex {
+  width: 1000px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   list-style-type: none;
-  margin: 0;
+  margin-left: 10px;
+  padding: 30px 0 0 0;
+
+  & > ul {
+    display: flex;
+    color: #fff;
+    list-style-type: none;
+    margin: 0;
+    gap: 10px;
+
+    & > li:first-child {
+      color: #f00;
+      font-size: 1.2rem;
+    }
+
+    & > img {
+      vertical-align: middle;
+      height: 30px;
+      width: 30px;
+    }
+
+    & > .flex-grow {
+      flex-grow: 1;
+    }
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 30px;
+
+  list-style-type: none;
   padding: 30px 0 0 0;
 }
 
@@ -42,7 +102,7 @@ body {
     transform: scale(1, 1);
   }
   100% {
-    transform: scale(1.3, 1.7);
+    transform: scale(1.2, 1.5);
   }
 }
 
@@ -53,18 +113,15 @@ body {
   &:hover {
     /* transform: scale(1.3, 1.7); */
     z-index: 3;
-    animation: 0.3s linear 0.5s forwards delay;
+    animation: 0.15s linear 0.5s forwards delay;
   }
 
-  & > .badge-new,
-  & > .badge-free,
-  & > .badge-option {
+  & > .badge-new {
     display: inline-block;
 
     position: absolute;
-    top: 10px;
-    left: 10px;
     z-index: 2;
+    text-align: center;
 
     &::after {
       display: inline-block;
@@ -75,19 +132,11 @@ body {
       border-radius: 8px;
     }
   }
-  & > .badge-free {
-    &::after {
-      content: "무료";
-    }
-  }
-  & > .badge-option {
-    &::after {
-      content: "부분 무료";
-    }
-  }
+
   & > .badge-new {
     &::after {
-      content: "NEW";
+      content: "Top 10";
+      width: 30px;
       color: #fff;
       background-color: #f00;
 
@@ -99,7 +148,7 @@ body {
     width: 300px;
     height: 200px;
     /* background-image: url("https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20260615/0950/P001788275.jpg/dims/resize/F_webp,400"); */
-    background-image: url("https://img1.daumcdn.net/thumb/R1280x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/ePhW/image/BJ6ABLB_yQZ5e3vnorv9PpDgpc4.png");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWEQkQ_ozhUmN-8Wka4_IfuAC5RfuE916QaHey3ChGLQ&s=10");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -113,7 +162,7 @@ body {
 
       text-align: center;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 900;
 
       & > span {
