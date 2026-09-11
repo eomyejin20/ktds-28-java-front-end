@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  width: 100vw;
+  height: 70vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  & > .merge_column1 {
+    grid-column: 1 / -1;
+    background-color: #000;
+  }
+
+  & > .merge-row1 {
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    background-color: #00f;
+  }
+
+  & > .merge-column2 {
+    grid-row: 4 / -1;
+    grid-column: 2 / 4;
+    background-color: #f00;
+  }
+
+  & > .merge-row-column {
+    grid-column: 4 / -1;
+    grid-row: 3 / -1;
+    background-color: #00f;
+  }
+}

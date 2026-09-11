@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  width: 100vw;
+  height: 70vh;
+
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 100px 1fr 150px;
+
+  & > .marge-column {
+    grid-column: 2 / -1;
+    background-color: #0ff;
+  }
+
+  & > .merge-row {
+    grid-row: 2 / -1;
+    grid-column: 2 / 3;
+    background-color: #f0f;
+  }
+}
